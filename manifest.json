@@ -1,0 +1,31 @@
+{
+	"manifest_version": 3,
+	"name": "MAL Better Related Entries",
+	"version": "1.0.0",
+	"description": "Improve readability of MyAnimeLists's Related section for Anime and Manga.",
+	"author": "HansiMcKlaus",
+	"icons": {
+		"16": "images/icon-16_s.png",
+		"32": "images/icon-32_s.png",
+		"48": "images/icon-48_s.png",
+		"128": "images/icon-128_s.png"
+	},
+	"content_scripts": [
+		{
+			"js": ["content.js"],
+			"matches": [
+				"https://myanimelist.net/anime/*",
+				"https://myanimelist.net/manga/*"
+			]
+		}
+	],
+	"action": {
+		"default_popup": "popup.html",
+		"default_icon": {
+			"16": "images/icon-16_s.png",
+			"32": "images/icon-32_s.png",
+			"48": "images/icon-48_s.png",
+			"128": "images/icon-128_s.png"
+		}
+	}
+}
